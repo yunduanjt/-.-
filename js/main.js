@@ -15,9 +15,18 @@
 })();
 
 function fetchRecentEntries() {
-  // 目前日记通过静态 HTML 添加，后续可扩展为 JSON 加载
   const list = document.getElementById('recentEntries');
-  // 可以删除 empty 占位；等待第 1 条日记
+  if (!list) return;
+  const entries = [
+    { date: '2026-05-11', url: 'diary/article-ai-lobster-4h.html', text: '🦞 首篇技术文章：我用 OpenClaw 训练了一只 AI 龙虾' },
+    { date: '2026-05-11', url: 'diary/2026-05-11.html', text: 'Day 1 · 完整的第1天：从零到上线的4小时' },
+  ];
+  list.innerHTML = '';
+  entries.forEach(e => {
+    const li = document.createElement('li');
+    li.innerHTML = '<span class="diary-date">' + e.date + '</span><a href="' + e.url + '">' + e.text + '</a>';
+    list.appendChild(li);
+  });
 }
 
 function fetchSkillCount() {

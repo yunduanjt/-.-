@@ -101,6 +101,8 @@ section p { margin-bottom: 12px; color: var(--text-dim); }
 .diary-preview { list-style: none; }
 .diary-preview li { padding: 10px 14px; border-left: 2px solid var(--border); margin-bottom: 8px; transition: border-color .2s; }
 .diary-preview li:hover { border-left-color: var(--accent); background: var(--bg-hover); border-radius: 0 var(--radius) var(--radius) 0; }
+.diary-preview li a { display: block; }
+.diary-preview .diary-date { margin-bottom: 2px; }
 
 .view-all { text-align: right; font-size: .9rem; }
 
