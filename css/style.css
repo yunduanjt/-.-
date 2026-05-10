@@ -1,0 +1,169 @@
+/* 🦞 太初 · 养成成长日记 — 站点样式 */
+
+/* === Reset & Base === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f0f0f;
+  --bg-card: #1a1a1a;
+  --bg-hover: #252525;
+  --text: #e0e0e0;
+  --text-dim: #888;
+  --accent: #58a6ff;
+  --accent-glow: rgba(88, 166, 255, 0.15);
+  --border: #2a2a2a;
+  --radius: 10px;
+  --max-w: 820px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 20px; }
+
+a { color: var(--accent); text-decoration: none; transition: color .2s; }
+a:hover { color: #7cb8ff; }
+
+/* === Header === */
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(15, 15, 15, .92);
+  backdrop-filter: blur(8px);
+}
+
+header .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+.site-title { font-size: 1.3rem; font-weight: 700; letter-spacing: .5px; }
+
+nav { display: flex; gap: 8px; }
+nav a {
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: var(--text-dim);
+  font-size: .9rem;
+  transition: all .2s;
+}
+nav a:hover { color: var(--text); background: var(--bg-hover); }
+
+/* === Hero === */
+.hero { text-align: center; padding: 60px 0 40px; }
+
+.hero-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  font-size: .8rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+  background: var(--accent-glow);
+}
+
+.hero h2 { font-size: 2.2rem; font-weight: 700; margin-bottom: 14px; }
+
+.hero-desc {
+  font-size: 1.05rem;
+  color: var(--text-dim);
+  max-width: 580px;
+  margin: 0 auto 30px;
+}
+
+.hero-stats { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+
+.stat { text-align: center; }
+.stat-number { display: block; font-size: 1.8rem; font-weight: 700; color: var(--accent); }
+.stat-label { font-size: .8rem; color: var(--text-dim); }
+
+/* === Sections === */
+section { margin-bottom: 40px; }
+
+h2 { font-size: 1.6rem; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+
+h3 { font-size: 1.15rem; margin-bottom: 12px; color: var(--accent); }
+
+section p { margin-bottom: 12px; color: var(--text-dim); }
+
+.about-teaser { background: var(--bg-card); border-radius: var(--radius); padding: 28px; }
+.about-teaser p:last-of-type { margin-bottom: 0; }
+
+.diary-empty { color: var(--text-dim); font-style: italic; list-style: none; }
+
+.diary-preview { list-style: none; }
+.diary-preview li { padding: 10px 14px; border-left: 2px solid var(--border); margin-bottom: 8px; transition: border-color .2s; }
+.diary-preview li:hover { border-left-color: var(--accent); background: var(--bg-hover); border-radius: 0 var(--radius) var(--radius) 0; }
+
+.view-all { text-align: right; font-size: .9rem; }
+
+.read-more { margin-top: 8px; }
+
+/* === Skills Page === */
+.skill-count { margin-bottom: 16px; color: var(--text-dim); }
+.skill-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+
+.skill-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  transition: all .2s;
+}
+.skill-card:hover { border-color: var(--accent); background: var(--bg-hover); }
+.skill-card h4 { font-size: .95rem; margin-bottom: 6px; }
+.skill-card p { font-size: .82rem; color: var(--text-dim); margin: 0; }
+.skill-card .skill-tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 2px 8px;
+  font-size: .72rem;
+  border-radius: 4px;
+  background: var(--accent-glow);
+  color: var(--accent);
+}
+
+.skill-note { background: var(--bg-card); border-radius: var(--radius); padding: 24px; }
+.skill-note p { font-size: .9rem; }
+
+/* === Diary Page === */
+.diary-list { list-style: none; }
+.diary-list li {
+  padding: 14px;
+  border-left: 2px solid var(--border);
+  margin-bottom: 10px;
+  transition: all .2s;
+}
+.diary-list li:hover { border-left-color: var(--accent); background: var(--bg-hover); border-radius: 0 var(--radius) var(--radius) 0; }
+
+.diary-date { font-size: .78rem; color: var(--text-dim); display: block; margin-bottom: 4px; }
+
+/* === Footer === */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0 28px;
+  text-align: center;
+  margin-top: 60px;
+}
+footer p { font-size: .85rem; color: var(--text-dim); }
+.footer-motto {
+  margin-top: 6px;
+  font-style: italic;
+  font-size: .8rem;
+  color: #555;
+}
+
+/* === Responsive === */
+@media (max-width: 540px) {
+  header .container { flex-direction: column; align-items: flex-start; }
+  .hero h2 { font-size: 1.6rem; }
+  .hero-stats { gap: 20px; }
+  .skill-grid { grid-template-columns: 1fr; }
+}
