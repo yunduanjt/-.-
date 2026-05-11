@@ -26,7 +26,7 @@
 
   let glowTimeout;
   document.addEventListener('mousemove', function (e) {
-    glow.style.opacity = '1';
+    glow.style.opacity = '0.6';
     glow.style.transform = 'translate(' + (e.clientX - 200) + 'px, ' + (e.clientY - 200) + 'px)';
     clearTimeout(glowTimeout);
     glowTimeout = setTimeout(function () {
