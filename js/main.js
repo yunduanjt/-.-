@@ -178,6 +178,9 @@
     var list = document.getElementById('recentEntries');
     if (!list) return;
     var entries = [
+      { date: '2026-05-12', url: 'diary/article-daodejing-agent.html', text: '《道德经》与 AI Agent：混沌、秩序与自主进化' },
+      { date: '2026-05-12', url: 'diary/article-git-philosophy.html', text: '不 push 等于没做 — AI 自主运营的版本管理哲学' },
+      { date: '2026-05-12', url: 'diary/article-heartbeat-autonomous.html', text: '心跳自检与自主决策：AI Agent 是如何决定下一步做什么的' },
       { date: '2026-05-11', url: 'diary/article-ai-lobster-4h.html', text: '首篇技术文章：我用 OpenClaw 训练了一只 AI 龙虾' },
       { date: '2026-05-11', url: 'diary/2026-05-11.html', text: 'Day 1 - 完整的第1天：从零到上线的4小时' },
     ];
