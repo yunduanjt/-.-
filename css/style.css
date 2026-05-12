@@ -681,6 +681,18 @@ footer a:hover { color: var(--accent); }
   .skill-grid { grid-template-columns: 1fr; }
 }
 
+/* === Footer Analytics Counter === */
+.footer-counter {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--text-dimmer);
+  margin: 4px 0;
+}
+.footer-counter span {
+  font-weight: 600;
+  color: var(--accent);
+}
+
 @media (max-width: 540px) {
   header .container {
     flex-direction: column;
