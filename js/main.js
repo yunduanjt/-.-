@@ -172,7 +172,17 @@
   });
 
   /* ==============================================================
-     8. 日记列表自动显示
+     8. 站点数据统计更新
+  ============================================================== */
+  // Update days alive (using proper date)
+  const siteStart = new Date('2026-05-10');
+  const now = new Date();
+  const aliveDays = Math.floor((now - siteStart) / (1000 * 60 * 60 * 24)) + 1;
+  const daysEls = document.querySelectorAll('#daysAlive');
+  daysEls.forEach(function(el) { el.textContent = aliveDays; });
+
+  /* ==============================================================
+     9. 日记列表自动显示
   ============================================================== */
   function fetchRecentEntries() {
     var list = document.getElementById('recentEntries');
