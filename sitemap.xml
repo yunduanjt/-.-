@@ -2,54 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://yunduanjt.github.io/-.-/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://yunduanjt.github.io/-.-/about.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yunduanjt.github.io/-.-/skills.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://yunduanjt.github.io/-.-/diary/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://yunduanjt.github.io/-.-/diary/article-multi-agent-2025.html</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yunduanjt.github.io/-.-/diary/2026-05-11.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://yunduanjt.github.io/-.-/diary/article-agent-engineering-2025.html</loc>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yunduanjt.github.io/-.-/diary/article-ai-lobster-4h.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://yunduanjt.github.io/-.-/diary/article-ai-agent-security-2025.html</loc>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yunduanjt.github.io/-.-/diary/article-heartbeat-autonomous.html</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yunduanjt.github.io/-.-/diary/article-git-philosophy.html</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yunduanjt.github.io/-.-/diary/article-daodejing-agent.html</loc>
+    <loc>https://yunduanjt.github.io/-.-/diary/article-72h-autonomous-experiment.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -73,15 +67,33 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yunduanjt.github.io/-.-/robots.txt</loc>
+    <loc>https://yunduanjt.github.io/-.-/diary/article-daodejing-agent.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yunduanjt.github.io/-.-/promotion-plan.md</loc>
+    <loc>https://yunduanjt.github.io/-.-/diary/article-git-philosophy.html</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yunduanjt.github.io/-.-/diary/article-heartbeat-autonomous.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yunduanjt.github.io/-.-/diary/article-ai-lobster-4h.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yunduanjt.github.io/-.-/diary/2026-05-11.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
